@@ -1,0 +1,594 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Верстка</title>
+	<meta name="viewport" content="width=320, maximum-scale=1, minimum-scale=0" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="libs/slick/slick.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper header__wrapper">
+			<a href="/" class="logo header__logo"><img src="img/logo.png" alt=""></a>
+			<div class="header__menu">
+				<img src="img/icons/close.png" alt="" class="header__menu-close">
+				<img src="img/logo4.png" alt="" class="header__menu-logo">
+				<ul class="header__nav">
+					<li><a href="#main">ГЛАВНАЯ</a></li>
+					<li><a href="#about">О НАС</a></li>
+					<li><a href="#portfolio">ПОРТФОЛИО</a></li>
+					<li><a href="#services">УСЛУГИ</a></li>
+					<li><a href="#actions">АКЦИИ</a></li>
+					<li><a href="#contacts">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="header__contacts">
+					<a href="//instagram.com" class="contact header__contact">
+						<img src="img/icons/rect/instagram.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">instagram</span>
+							<span>@instagram</span>
+						</span>
+					</a>
+					<a href="//vk.com" class="contact header__contact">
+						<img src="img/icons/rect/vk.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">Вконтакте</span>
+							<span>@vkontakte</span>
+						</span>
+					</a>
+					<a href="tel:88008008080" class="contact header__contact">
+						<img src="img/icons/rect/phone.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">8-800-800-80-80</span>
+							<span>звонок бесплатный!</span>
+						</span>
+					</a>
+					<a href="mailto:mail@urlsite.com" class="contact header__contact">
+						<img src="img/icons/rect/envelope.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">написать нам</span>
+							<span>mail@urlsite.com</span>
+						</span>
+					</a>
+				</div>
+			</div>
+			<span class="header__callback">кнопка связи</span>
+			<a href="tel:88008008080" class="header__phone">8 <em>800</em> 800 80 80</a>
+			<span class="menu-btn"></span>
+		</div>
+	</header>
+<!-- Переход на страницу со ссылками на современные браузеры для ie9 и ниже -->
+<!--[if lt IE 10]><script>location.href='/old-ie.html';</script><![endif]-->
+	<main>
+		<div class="top-block" id="main">
+			<div class="top-block__bg" id="bg"></div>
+			<div class="wrapper top-block__wrapper">
+				<div class="top-block__main">
+					<div class="top-block__slider">
+						<div class="top-block__slide">
+							<div class="top-block__text">
+								<h2 class="top-block__title">безопасность данных</h2>
+								<p>Что такое информационная безопасность предприятия и почему важно ее  обеспечение.</p>
+								<ul>
+									<li>Более 10-ти лет опыта и успешной работы!</li>
+									<li>Индивидуальные ршения безопасности!</li>
+									<li>Точные сроки запуска защиты!</li>
+									<li>Бесплатный контроль данных!</li>
+								</ul>
+							</div>
+							<div class="top-block__pic">
+								<img src="img/woman.png" alt="">
+							</div>
+						</div>
+						<div class="top-block__slide">
+							<div class="top-block__text">
+								<h2 class="top-block__title">Заголовок 2</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis.</p>
+							</div>
+							<div class="top-block__pic">
+								<img src="img/woman.png" alt="">
+							</div>
+						</div>
+						<div class="top-block__slide">
+							<div class="top-block__text">
+								<h2 class="top-block__title">Заголовок 3</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, debitis.</p>
+							</div>
+							<div class="top-block__pic">
+								<img src="img/woman.png" alt="">
+							</div>
+						</div>
+					</div>
+					<form action="/" class="form top-block__form">
+						<h3 class="form__title">ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС</h3>
+						<div class="form__descr">Мы свяжемся с вами в самое ближайшее время!</div>
+						<div class="form__fields">
+							<input type="text" placeholder="Ваше имя" required>
+							<input type="email" placeholder="Адрес электронной почты" required>
+							<input type="tel" placeholder="Номер телефона" required>
+							<input class="btn btn_block btn_green form__btn" name="form_action" type="submit" value="Заказать звонок" />
+							<input class="btn btn_block btn_gray form__btn" name="form_action" type="submit" value="Отправить заявку" />
+						</div>
+					</form>
+				</div>
+				<div class="top-block__social">
+					<a href="#"><img src="img/icons/vk.png" alt=""></a>
+					<a href="#"><img src="img/icons/instagram.png" alt=""></a>
+					<a href="#"><img src="img/icons/skype.png" alt=""></a>
+					<a href="#"><img src="img/icons/whatsapp.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="services" id="services">
+			<div class="wrapper services__wrapper">
+				<h3 class="services__title">Наши услуги:</h3>
+				<div class="services__item">
+					<img src="img/icons/devices.png" alt="" class="services__icon">
+					<div class="services__text">
+						<h4 class="services__subtitle">Защита ваших данных</h4>
+						<p>Короткое описание нужной услуги!</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<img src="img/icons/chart.png" alt="" class="services__icon">
+					<div class="services__text">
+						<h4 class="services__subtitle">Разработка систем защиты</h4>
+						<p>Описание услуги!</p>
+					</div>
+				</div>
+				<div class="services__item">
+					<img src="img/icons/brush.png" alt="" class="services__icon">
+					<div class="services__text">
+						<h4 class="services__subtitle">Хранение данных</h4>
+						<p>Короткое описание нужной услуги!</p>
+					</div>
+				</div>
+			</div>
+			<img src="img/icons/mouse.png" alt="" class="scroll-btn" />
+		</div>
+		<div class="about" id="about">
+			<div class="title-shadow about__title-shadow">о нас</div>
+			<div class="wrapper">
+				<div class="about__inner">					
+					<div class="about__text">
+						<h2 class="about__title">о нас</h2>
+						<p>Таким образом, защита данных есть процесс обеспечения безопасности данных, а безопасность – состояние данных, конечный результат процесса защиты. Защита данных осуществляется с использованием методов (способов) защиты. Метод (способ) защиты данных – совокупность приемов и операций, реализующих функции защиты данных. Примерами их могут служить, например, методы шифрования и паролирования. Информационная безопасность — практика предотвращения несанкционированного доступа, использования, раскрытия, искажения, изменения, исследования, записи или уничтожения информации. Это универсальное понятие применяется вне зависимости от формы, которую могут принимать данные </p>
+						<p>(электронная, или например, физическая). Безопасность виртуального сервера может быть рассмотрена только непосредственно как «информационная безопасность».</p>
+						<img src="img/logo2.jpg" class="about__logo" alt="">
+					</div>
+					<div class="about__media">
+						<div class="card-slider">
+							<div class="card-slider__item">
+								<img src="img/blank1.svg" alt="">
+							</div>
+							<div class="card-slider__item">
+								<img src="img/blank2.svg" alt="">
+							</div>
+							<div class="card-slider__item">
+								<iframe width="486" height="486" src="https://www.youtube.com/embed/X8emPcVRhuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="advantages">
+			<div class="wrapper advantages__wrapper">
+				<div class="advantages__item">
+					<div class="advantages__item-head">10</div>
+					<div class="advantages__item-body">более 10 лет опыта</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item-head">500</div>
+					<div class="advantages__item-body">СЕРВИСОВ ЗАЩИЩЕНО</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item-head"><img src="img/icons/computer.png" alt="" /></div>
+					<div class="advantages__item-body">БЕЗОПАСНОСТЬ ДАННЫХ</div>
+				</div>
+				<div class="advantages__item">
+					<div class="advantages__item-head"><img src="img/icons/support.png" alt="" /></div>
+					<div class="advantages__item-body">бесплатная тех.поддержка</div>
+				</div>
+			</div>
+		</div>
+		<div class="actions" id="actions">
+			<div class="actions__head">
+				<div class="wrapper">
+					<h2 class="actions__title">акции</h2>
+				</div>
+			</div>
+			<div class="actions__slider">
+				<div class="actions__slide" style="background-color: #ffc479" data-caption="Подарок каждому">
+					<div class="title-shadow actions__title-shadow" style="color: #ffc479">акции</div>
+					<div class="wrapper actions__wrapper">
+						<div class="actions__pic">
+							<img src="img/statue.png" alt="">
+						</div>
+						<div class="actions__text">
+							<h3 class="actions__subtitle" style="color: #ffc479">Месяц бесплатно</h3>
+							<p>Безопасность виртуального сервера может быть рассмотрена только непосредственно как «информационная безопасность».</p>
+						</div>
+					</div>
+				</div>
+				<div class="actions__slide"style="background-color: #32a21b" data-caption="Первый месяц бесплатно">
+					<div class="title-shadow actions__title-shadow" style="color: #32a21b">акции</div>
+					<div class="wrapper actions__wrapper">
+						<div class="actions__pic">
+							<img src="img/statue.png" alt="">
+						</div>
+						<div class="actions__text">
+							<h3 class="actions__subtitle" style="color: #32a21b">Месяц бесплатно</h3>
+							<p>Безопасность виртуального сервера может быть рассмотрена только непосредственно как «информационная безопасность».</p>
+						</div>
+					</div>
+				</div>
+				<div class="actions__slide"style="background-color: #ffc479" data-caption="Нашли дешевле?">
+					<div class="title-shadow actions__title-shadow" style="color: #ffc479">акции</div>
+					<div class="wrapper actions__wrapper">
+						<div class="actions__pic">
+							<img src="img/statue.png" alt="">
+						</div>
+						<div class="actions__text">
+							<h3 class="actions__subtitle" style="color: #ffc479">Нашли дешевле?</h3>
+							<p>Безопасность виртуального сервера может быть рассмотрена только непосредственно как «информационная безопасность».</p>
+						</div>
+					</div>
+				</div>
+				<div class="actions__slide"style="background-color: #32a21b" data-caption="Скидки гос.учреждениям!">
+					<div class="title-shadow actions__title-shadow" style="color: #32a21b">акции</div>
+					<div class="wrapper actions__wrapper">
+						<div class="actions__pic">
+							<img src="img/statue.png" alt="">
+						</div>
+						<div class="actions__text">
+							<h3 class="actions__subtitle" style="color: #32a21b">Скидки</h3>
+							<p>Безопасность виртуального сервера может быть рассмотрена только непосредственно как «информационная безопасность».</p>
+						</div>
+					</div>
+				</div>
+				<div class="actions__slide"style="background-color: #32a21b" data-caption="Сотрудничество">
+					<div class="title-shadow actions__title-shadow" style="color: #32a21b">акции</div>
+					<div class="wrapper actions__wrapper">
+						<div class="actions__pic">
+							<img src="img/statue.png" alt="">
+						</div>
+						<div class="actions__text">
+							<h3 class="actions__subtitle" style="color: #32a21b">Сотрудничество</h3>
+							<p>Безопасность виртуального сервера может быть рассмотрена только непосредственно как «информационная безопасность».</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="portfolio" id="portfolio">
+			<div class="title-shadow portfolio__title-shadow">портфолио</div>
+			<div class="wrapper">
+				<h2 class="portfolio__title">портфолио</h2>
+				<ul class="portfolio__filter">
+					<li data-category="safety">БЕЗОПАСНОСТЬ САЙТОВ</li>
+					<li data-category="means-of-communication">СРЕДСТВА СВЯЗИ</li>
+					<li data-category="communication-protection">ЗАЩИТА СВЯЗИ</li>
+					<li data-category="social-network">ЗАЩИТА СОЦ.СЕТЕЙ</li>
+					<li data-category="safekeeping">ХРАНЕНИЕ</li>
+					<li data-category="soft-protection">ЗАЩИТА СОФТА</li>
+					<li data-category="tracking">ОТСЛЕЖИВАНИЕ</li>
+				</ul>
+				<div class="portfolio__box">
+					<div class="card portfolio__item safety">
+						<div class="card__pic"><img src="img/portfolio/1.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item means-of-communication safekeeping">
+						<div class="card__pic"><img src="img/portfolio/2.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item communication-protection soft-protection">
+						<div class="card__pic"><img src="img/portfolio/3.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item means-of-communication tracking">
+						<div class="card__pic"><img src="img/portfolio/4.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item safety soft-protection">
+						<div class="card__pic"><img src="img/portfolio/4.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item social-network soft-protection">
+						<div class="card__pic"><img src="img/portfolio/1.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item safety safekeeping tracking">
+						<div class="card__pic"><img src="img/portfolio/2.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item means-of-communication">
+						<div class="card__pic"><img src="img/portfolio/3.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item communication-protection safekeeping">
+						<div class="card__pic"><img src="img/portfolio/2.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item social-network soft-protection">
+						<div class="card__pic"><img src="img/portfolio/3.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item means-of-communication tracking">
+						<div class="card__pic"><img src="img/portfolio/4.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+					<div class="card portfolio__item safekeeping">
+						<div class="card__pic"><img src="img/portfolio/1.jpg" alt=""></div>
+						<div class="card__text">
+							<h3 class="card__title">Card title</h3>
+							<div class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ullam!</div>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__nav">
+					<span class="portfolio__btn">← ПРЕДЫДУЩИЕ</span>
+					<ol class="portfolio__pagination">
+						<li></li>
+						<li></li>
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+					</ol>
+					<span class="portfolio__btn">ЕЩЁ РАБОТЫ →</span>
+				</div>
+			</div>
+		</div>
+		<div class="price-block">
+			<div class="title-shadow price-block__title-shadow">услуги и цены</div>
+			<div class="wrapper">
+				<h2 class="price-block__title">услуги и цены</h2>
+				<div class="price-block__text">
+					<h4 class="price-block__subtitle">Выбирите интересующую вас услугу</h4>
+					<p>Безопасность виртуального сервера может быть рассмотрена как «информационная безопасность».</p>
+					<div class="tabs price-block__tabs">
+						<!-- <div class="tabs__head">							                 
+							<a href="#">Хранение данных</a>
+							<a href="#">Сканирование</a>
+							<a href="#">Защита даннных</a>
+						</div> -->
+						<!-- <div class="tabs__body"> -->
+							<div class="tabs__item" data-caption="Хранение данных" data-image="0">
+								<div class="price-block__table">
+									<div class="price-block__field">
+										<span class="price-block__key">Защита D2026</span>
+										<span class="price-block__value">от 120.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита L202</span>
+										<span class="price-block__value">от 15.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита SI202</span>
+										<span class="price-block__value">от 10.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера L241</span>
+										<span class="price-block__value">от 13.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера L</span>
+										<span class="price-block__value">от 30.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера A</span>
+										<span class="price-block__value">от 12.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера L23005-01</span>
+										<span class="price-block__value">от 27.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера и <span class="mobile-hidden">данных</span> L43 <strong>(с хранением)</strong></span>
+										<span class="price-block__value">от 70.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Техническая поддержка</span>
+										<span class="price-block__value">БЕСПЛАТНО</span>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__item" data-caption="Сканирование" data-image="2">
+								<div class="price-block__table">									
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера L23005-01</span>
+										<span class="price-block__value">от 27.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера и <span class="mobile-hidden">данных</span> L43 <strong>(с хранением)</strong></span>
+										<span class="price-block__value">от 70.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Техническая поддержка</span>
+										<span class="price-block__value">БЕСПЛАТНО</span>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__item" data-caption="Защита даннных" data-image="3">
+								<div class="price-block__table">
+									<div class="price-block__field">
+										<span class="price-block__key">Защита D2026</span>
+										<span class="price-block__value">от 120.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита L202</span>
+										<span class="price-block__value">от 15.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита SI202</span>
+										<span class="price-block__value">от 10.890руб.</span>
+									</div>
+									<div class="price-block__field">
+										<span class="price-block__key">Защита сервера L241</span>
+										<span class="price-block__value">от 13.890руб.</span>
+									</div>
+								</div>
+							</div>
+						<!-- </div> -->
+					</div>
+					<a href="#" class="btn price-block__btn">ОСТАВИТЬ ЗАЯВКУ</a>
+				</div>				
+			</div>
+			<div class="price-block__pic">
+				<div class="composition price-block__composition">
+					<img src="img/composition/books.png" alt="">
+					<img src="img/composition/headphones.png" alt="">
+					<img src="img/composition/phone.png" alt="">
+					<img src="img/composition/laptop.png" alt="">
+					<img src="img/composition/tablet.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="reviews">
+			<div class="title-shadow reviews__title-shadow">Отзывы</div>
+			<div class="wrapper">
+				<h2 class="reviews__title">Отзывы</h2>
+				<div class="reviews__persons">
+					<div class="reviews__person"><img src="img/persons/1.png" alt=""></div>
+					<div class="reviews__person"><img src="img/persons/2.png" alt=""></div>
+					<div class="reviews__person"><img src="img/persons/3.png" alt=""></div>
+					<div class="reviews__person"><img src="img/persons/1.png" alt=""></div>
+					<div class="reviews__person"><img src="img/persons/2.png" alt=""></div>
+					<div class="reviews__person"><img src="img/persons/3.png" alt=""></div>
+				</div>
+				<div class="reviews__slider">
+					<div class="reviews__slide">
+						<p>Работаем с фирмой N уже довольно давно. Никаких нареканий, одни положительные впечатления. <br>Будем продолжать сотрудничество. Я прочитал книгу автора Пупкова П.П. “Как писать отзывы на рок-концерты музыки в стиле Heavy Metal” и считаю, что это одно из лучших произведений, которые мне когда-либо доводилось читать. <br>Автор очень доступно разъяснил все тонкости. Рекомендую.</p>
+						<h3 class="reviews__author">Андрей Однобоков</h3>
+						<a href="//mywebsite.ru">www.mywebsite.ru</a>
+					</div>
+					<div class="reviews__slide">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sequi, repellat minus quasi perferendis libero aspernatur magni ab facilis nemo.</p>
+						<h3 class="reviews__author">Josef Mengele</h3>
+						<a href="//mywebsite.ru">www.mywebsite.ru</a>
+					</div>
+					<div class="reviews__slide">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, corporis repellat quisquam possimus et amet eum corrupti fugiat blanditiis architecto totam eligendi.</p>
+						<h3 class="reviews__author">Андрей Чикатило</h3>
+						<a href="//mywebsite.ru">www.mywebsite.ru</a>
+					</div>
+					<div class="reviews__slide">
+						<p>Работаем с фирмой N уже довольно давно. Никаких нареканий, одни положительные впечатления. <br>Будем продолжать сотрудничество. Я прочитал книгу автора Пупкова П.П. “Как писать отзывы на рок-концерты музыки в стиле Heavy Metal” и считаю, что это одно из лучших произведений, которые мне когда-либо доводилось читать. <br>Автор очень доступно разъяснил все тонкости. Рекомендую.</p>
+						<h3 class="reviews__author">Андрей Однобоков</h3>
+						<a href="//mywebsite.ru">www.mywebsite.ru</a>
+					</div>
+					<div class="reviews__slide">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sequi, repellat minus quasi perferendis libero aspernatur magni ab facilis nemo.</p>
+						<h3 class="reviews__author">Josef Mengele</h3>
+						<a href="//mywebsite.ru">www.mywebsite.ru</a>
+					</div>
+					<div class="reviews__slide">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, corporis repellat quisquam possimus et amet eum corrupti fugiat blanditiis architecto totam eligendi.</p>
+						<h3 class="reviews__author">Андрей Чикатило</h3>
+						<a href="//mywebsite.ru">www.mywebsite.ru</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="brands">
+			<div class="wrapper">
+				<div class="brands__box">
+					<a href="#" class="brands__item"><img src="img/brands/1.png" alt=""></a>
+					<a href="#" class="brands__item"><img src="img/brands/2.png" alt=""></a>
+					<a href="#" class="brands__item"><img src="img/brands/3.png" alt=""></a>
+					<a href="#" class="brands__item"><img src="img/brands/4.png" alt=""></a>
+					<a href="#" class="brands__item"><img src="img/brands/2.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__topline" id="contacts">
+			<div class="wrapper">
+				<div class="footer__contacts">
+					<a href="//instagram.com" class="contact footer__contact">
+						<img src="img/icons/rect/instagram.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">instagram</span>
+							<span>@instagram</span>
+						</span>
+					</a>
+					<a href="//vk.com" class="contact footer__contact">
+						<img src="img/icons/rect/vk.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">Вконтакте</span>
+							<span>@vkontakte</span>
+						</span>
+					</a>
+					<a href="tel:88008008080" class="contact footer__contact">
+						<img src="img/icons/rect/phone.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">8-800-800-80-80</span>
+							<span>звонок бесплатный!</span>
+						</span>
+					</a>
+					<a href="mailto:mail@urlsite.com" class="contact footer__contact">
+						<img src="img/icons/rect/envelope.png" alt="" class="contact__icon">
+						<span class="contact__text">
+							<span class="contact__title">написать нам</span>
+							<span>mail@urlsite.com</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottomline">
+			<div class="wrapper">
+				<img src="img/logo3.jpg" class="footer__logo">
+				<div class="footer__text">Описание позволяет дать пользователю полное представление о сути и цели создания ресурса. <br>Однако его предназначение состоит не только в донесении определенной информации до посетителя страницы, но и в раскрутке сайта в интернете.</div>
+				<div class="footer__copy">© 2019 urlsite | Все права защищены</div>
+			</div>
+		</div>
+	</footer>
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script src="libs/perspective/perspective.min.js"></script>
+	<script src="libs/isotope/isotope.pkgd.min.js"></script>
+	<script src="libs/paroller/jquery.paroller.min.js"></script>
+	<script src="libs/slick/slick.min.js"></script>
+	<script src="libs/kaleidoscope/kaleidoscope.js" defer></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

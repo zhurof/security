@@ -1,0 +1,807 @@
+﻿@media(min-width: 1024px)
+	.header
+		&__menu
+			a
+				transition: all .2s ease
+				&:hover
+					color: $red
+					text-decoration: underline
+		&__callback
+			transition: all .2s ease
+			&:hover
+				background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgxLjMzIiBoZWlnaHQ9IjQyLjY2NyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjgxLjMzIDQyLjY2NyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJtMCAwaDI4MS4zM2wtMjMuOTc3IDM3Ljg3MWMtMS41NzY3IDIuNDY5Mi0zLjU2NjIgNC41OTQ0LTcuNjcyNyA0Ljk1NTNoLTIxNy41NWMtMy4xMjI1LTAuMjIwNDktNS42NDI2LTEuODUzNy03LjY3MjctNC42MzU2eiIgZmlsbD0iI2Q1M2QzZCIvPjwvc3ZnPiA=)
+
+	.actions
+		&__dots
+			>li:hover
+				text-decoration: underline
+
+	.portfolio
+		&__filter
+			>li
+				transition: all .2s ease
+				&:hover
+					color: $red
+		&__pagination
+			>li
+				transition: color .2s ease
+				&:hover
+					color: $red
+		&__btn
+			transition: all .2s ease
+			&:hover
+				color: $red
+
+	.tabs
+		&__head
+			>li
+				transition: all .2s ease
+				&:hover
+					color: $red
+
+	.reviews
+		&__slider
+			a
+				transition: all .2s ease
+				&:hover
+					color: #50903e
+
+	.brands
+		&__item
+			opacity: .5
+			transition: all .2s ease
+			&:hover
+				opacity: 1
+
+@media(max-width: 1819px)
+	body
+		line-height: 1.6
+		font-size: 15px
+	p
+		margin: 0 0 1.6em
+
+	h1,h2
+		margin: 0 0 .16em
+
+	.wrapper
+		max-width: 1110px
+
+	.slick
+		&-arrow
+			top: 50%
+			transform: translateY(-50%)
+			&.prev
+				left: calc(50% - 617px)
+			&.next
+				right: calc(50% - 617px)
+
+	.top-block
+		&__wrapper
+			position: relative
+		&__main
+			display: block
+		&__slider
+			width: auto
+			padding: 0
+		&__slide
+			position: relative
+			&.slick-slide
+				display: block
+		&__text
+			width: 100%
+			max-width: 425px
+			padding: 53px 0 122px 0
+			position: relative
+			z-index: 1
+			line-height: 27.9/19*1
+			p
+				margin: 0 0 1.1em
+			ul
+				margin: 0
+		&__pic
+			+pos
+			padding: 0 0 0 100px
+			img
+				height: 100%
+				width: auto
+		&__form
+			margin: 0
+			position: absolute
+			right: 15px
+			top: 92px
+	.services
+		&__title
+			margin: 0 0 0 67px
+
+	.about
+		&__title-shadow
+			padding-left: 14vw
+		&__media
+			width: 486px
+			opacity: 0
+		&__text
+			width: calc(100% - 486px)
+			padding: 0 0 0 93px
+		&__title
+			margin: 0 0 .15em
+		&__logo
+			margin: -10px 0px 0 0
+
+	.advantages
+		&__item
+			width: 270px
+			padding: 23px 20px 34px 20px
+
+	.actions
+		&__title-shadow
+			padding-left: 16.1vw
+		&__wrapper
+			display: block
+		&__slide
+			overflow: hidden
+		&__text
+			width: auto
+			max-width: 685px
+			padding: 323px 13px 89px 0
+			position: relative
+			z-index: 1
+		&__subtitle
+			padding: 24px 18px 24px 18px
+		&__pic
+			position: absolute
+			left: calc(50% + 69px)
+			top: 0
+			width: 493px
+			img
+				width: 100%
+
+	.portfolio
+		&__filter
+			margin: 0 0 50px
+		&__box
+			margin: 0 0 52px
+			
+	.tabs
+		&__head
+			font-size: 17px
+			margin: 0 -18px
+			padding: 30px 0
+			>li
+				margin: 0 18px
+
+	.price-block
+		&__title-shadow
+			padding-right: 0
+			padding-left: 13.5vw
+		&__table,.slick-list:before
+			max-width: 560px
+		&__composition
+			right: auto
+			left: calc(50% - 260px)
+
+	.reviews
+		&__arrow
+			&.prev
+				left: calc(50% - 391px)
+			&.next
+				right: calc(50% - 391px)
+		&__slider
+			max-width: 990px
+			br
+				display: none
+@media(max-width:1279px)
+	ul
+		padding-left: 30/16*1em
+		>li
+			&:before
+				left: -30/16*1em
+
+	.wrapper
+		max-width: 1000px
+
+	.top-block
+		&__title
+			font-size: 78px
+			line-height: 88.9/78*1
+			margin: 0 0 18px
+		&__text
+			padding: 57px 0 122px 0
+			p
+				max-width: 345px
+
+	.services
+		&__title
+			margin: 0 0 0 53px
+			flex: 0 0 auto
+		&__item
+			margin: 3px 17px 0 45px
+
+	.about
+		padding-bottom: 25px
+		&__title-shadow
+			padding-left: 18vw
+		&__media
+			width: 432px
+			flex: 0 0 auto
+		&__text
+			width: calc(100% - 432px)
+			flex: 1 1 auto
+
+	.advantages
+		&__item
+			width: auto
+			flex: 1 1 auto
+			padding: 23px 10px 34px 10px
+			&:first-child
+				padding-left: 0
+				padding-right: 0
+			&:last-child
+				padding-right: 0
+			&-head
+				margin: 0 9px 0 0
+
+	.action
+		&__title-shadow
+			padding-left: 7.8vw
+
+	.portfolio
+		padding: 133px 0 49px
+		&__title-shadow
+			font-size: 240px
+			top: 93px
+			text-indent: .59em
+		&__title
+			margin: 0 0 8px
+		&__filter
+			max-width: 700px
+			margin: 0 0 12px
+		&__box
+			margin: 0
+		&__item
+			width: calc(100% / 3)
+			&:nth-child(n+10)
+				display: none
+		&__nav
+			padding: 3px 0
+
+	.tabs
+		&__head
+			line-height: 1.9
+			padding: 27px 0
+
+	.price-block
+		&__title-shadow
+			font-size: 219px
+			top: 71px
+			padding-left: 4.3vw
+		&__table,.slick-list:before
+			max-width: 507px
+
+	.reviews
+		&__title-shadow
+			font-size: 447px
+			top: 50px
+			padding: 0
+			text-indent: -1.5vw
+		&__slider
+			max-width: 840px
+			p
+				margin: 0 0 1.3em
+		&__author
+			margin: 1em 0 0
+		&__dots
+			margin: 13px 0 0
+
+
+@media(max-width:1023px)
+	.wrapper
+		padding: 0 38px
+	.header
+		&__wrapper
+			align-items: flex-start
+		&__logo
+			margin: 0 auto 0 0
+		&__menu
+			display: none
+			position: fixed
+			top: 0
+			right: 0
+			width: 350px
+			max-width: 100%
+			height: 100vh
+			overflow: auto
+			z-index: 2
+			background-color: transparentize($red,.04)
+			text-align: center
+			color: #fff
+			padding: 84px 15px 40px
+			&-close
+				display: inline-block
+				position: absolute
+				top: 46px
+				right: 31px
+				cursor: pointer
+			&-logo
+				display: block
+				margin: 0 auto 35px
+		&__nav
+			font-size: 36px
+			font-weight: bold
+			text-transform: uppercase
+			line-height: 59/36*1
+			margin: 0 0 51px
+		&__contacts
+			display: block
+		&__contact
+			width: 200px
+			display: flex
+			margin: 0 auto 12px
+		&.fixed
+			background-color: #1b2229
+			color: #fff
+			padding: 6px 0
+			.menu-btn
+				background-image: url(../img/icons/menu-btn_white.png)
+		&.fixed &__phone
+			margin: 0
+
+	.menu-btn
+		display: inline-block
+		width: 30px
+		height: 30px
+		flex: 0 0 auto
+		cursor: pointer
+		background: url(../img/icons/menu-btn.png) no-repeat center/contain
+		margin: 8px 0 0 18px
+
+	.top-block
+		&__form
+			display: none
+		&__wrapper
+			padding: 0
+		&__slide
+			overflow: hidden
+			padding: 0 38px
+		&__pic
+			padding: 0
+			left: 38px
+			img
+				margin: 0 0 0 auto
+		&__social
+			left: 38px
+
+	.services
+		padding: 31px 0 30px
+		&__title
+			display: none
+		&__item
+			margin: 5px 17px 0 17px
+
+	.card-slider
+		margin: 0 0 133px
+		width: 431px
+		max-width: 100%
+		&__item
+			iframe
+				height: 432px
+
+	.about
+		padding: 171px 0 92px
+		&__title-shadow
+			padding: 0
+			text-indent: 8vw
+		&__inner
+			display: block
+		&__text
+			width: auto
+			padding: 0
+			margin: 0 0 94px
+		&__title
+			margin: 0 0 1px
+		&__media
+			width: auto
+			opacity: 1
+
+	.advantages
+		padding: 22px 0 15px
+		&__wrapper
+			flex-wrap: wrap
+		&__item
+			width: 50%
+			justify-content: center
+			margin: 0 0 15px
+			&:nth-child(2n)
+				border: none
+
+	.actions
+		&__title-shadow
+			padding: 0
+			text-indent: -6vw
+		&__text
+			padding-bottom: 55px
+			p
+				max-width: 480px
+
+	.portfolio
+		padding-bottom: 103px
+		&__filter
+			margin: 0 0 31px
+		&__item
+			width: 50%
+			&:nth-child(n+5)
+				display: none
+		&__nav
+			padding: 20px 0
+
+	.tabs
+		&__head
+			max-width: 500px
+			padding: 28px 0
+
+	.price-block
+		&__title-shadow
+			padding: 0
+			text-indent: -11vw
+		&__text
+			>p
+				&:last-of-type
+					margin: 0
+		&__tabs
+			margin: 0 0 40px
+		.slick-list:before
+			max-width: 354px
+		&__table
+			max-width: 354px
+			strong
+				display: none
+
+
+	.reviews
+		padding: 130px 0 85px
+		&__title-shadow
+			text-indent: -11.5vw
+		&__title
+			margin: 0 0 1.28em
+		&__arrow
+			top: 41%
+			&.prev
+				left: calc(50% - 270px)
+			&.next
+				right: calc(50% - 270px)
+		&__persons
+			margin: 0 auto 24px
+		&__slider
+			font-size: 17px
+			line-height: 24/17*1
+		&__author
+			margin:  2.4em 0 0
+		&__dots
+			margin: 16px 0 0
+
+	.brands
+		padding: 16px 0 17px
+		&__item
+			&:first-child
+				display: none
+
+	.footer
+		&__topline
+			padding: 46px 0 56px
+		&__contacts
+			margin: 0 auto
+			max-width: 510px
+			justify-content: space-between
+		&__contact
+			width: 200px
+			margin: 0
+			&:nth-last-child(n+3)
+				margin: 0 0 92px
+		&__bottomline
+			padding: 32px 0 48px
+		&__logo
+			margin: 0 auto 20px
+		&__text
+			max-width: 505px
+			margin: 0 auto 3.1em
+			br
+				display: none
+
+@media(max-width:767px)
+	body
+		font-size: 14px
+		line-height: 18/14*1
+	ul
+		>li
+			margin: 0 0 .3em
+	.wrapper
+		padding: 0 13px
+	
+	.mobile-hidden
+		display: none
+	
+	.header
+		padding: 12px 0
+		&__callback
+			display: none
+		&__phone
+			margin: 9px 0 0
+		&__menu
+			padding: 40px 15px
+			&-close
+				top: 21px
+				right: 26px
+			&-logo
+				margin: 0 auto 27px
+		&__nav
+			font-size: 30px
+			line-height: 48/30*1
+			margin: 0 0 27px
+		&__contact
+			width: 165px
+			font-size: 13px
+			margin: 0 auto 9px
+			.contact
+				&__icon
+					width: 35px
+					margin: 0 12px 0 0
+				&__text
+					width: calc(100% - 35px)
+					text-align: left
+				&__title
+					font-size: 20px
+					
+			
+		&.fixed &__phone
+			margin: 7px 0 0
+
+	.menu-btn
+		width: 29px
+		height: 29px
+		margin: 13px -4px 0 12px
+
+	.top-block
+		padding: 89px 0 0
+		&__wrapper
+			padding: 0
+		&__slide
+			padding: 0 13px
+		&__social
+			left: 13px
+			top: calc(100% - 46px)
+		&__text
+			font-size: inherit
+			line-height: 17/14*1
+			padding: 40px 0 65px 0
+			p
+				max-width: calc(50% + 53px)
+				margin: 0 0 2em
+			ul
+				max-width: calc(50% + 53px)
+				font-size: 13px
+				line-height: 1
+		&__title
+			font-size: 44px
+			line-height: 48/44*1
+		&__pic
+			left: 63%
+			img
+				max-width: 1000vw
+				max-width: unset
+				margin: 0
+
+	.services
+		padding: 40px 0 50px
+		&__wrapper
+			display: block
+		&__item
+			display: flex
+			margin: 0 auto 32px
+			&:last-child
+				margin: 0 auto
+
+	.scroll-btn
+		display: none
+
+	.card-slider
+		&__item
+			&:nth-child(n+2)
+				display: none //убрать
+
+	.about
+		padding: 77px 0 12px 0
+		&__title-shadow
+			font-size: 309px
+			top: 30px
+			text-indent: -59vw
+		&__text
+			padding: 0 0 0 5px
+			letter-spacing: -5/100*1em
+			margin: 0 0 87px
+		&__title
+			margin: 0
+			letter-spacing: 0
+
+	.advantages
+		padding: 6px 0 15px
+		&__wrapper
+			display: block
+		&__item
+			width: auto
+			border-right: none
+			border-bottom: 1px solid #d2dde5
+			padding: 14px 0 12px
+			margin: 0
+			&:nth-child(2n)
+				border-bottom: 1px solid #d2dde5
+			&:last-child
+				border-bottom: none
+			&-head
+				width: 118px
+				text-align: right
+				font-size: 42px
+				img
+					margin: 0 0 0 auto
+					height: 46px
+			&-body
+				width: 120px
+				font-size: 14px
+
+	.actions
+		font-size: 15px
+		line-height: 20/15*1
+		&__head
+			top: 56px
+		&__title
+			font-size: 72px
+			margin: 0 0 7px
+		&__dots
+			font-size: 0
+			>li
+				display: inline-block
+				margin: 0 14px 0 0
+				&:before
+					font-size: 18px
+		&__slide
+			padding: 178px 0 41px
+		&__title-shadow
+			font-size: 505px
+			top: 24px
+			text-indent: -26vw
+		&__pic
+			position: relative
+			left: auto
+			top: auto
+			width: 100%
+			max-width: 320px
+			padding: 0 38px
+			margin: 0 auto 19px
+			&:before
+				width: 100%
+				left: 0
+		&__text
+			padding: 0
+		&__subtitle
+			font-size: 26px
+			padding: 11px 10px 11px 12px
+			margin: 0 0 12px
+			
+	.portfolio
+		padding: 47px 0 19px
+		&__title
+			font-size: 60px
+			margin: 0 0 10px
+		&__filter
+			display: block
+			line-height: 24/14*1
+			>li
+				display: block
+				border: none
+				padding: 0
+		&__nav
+			justify-content: space-between
+			padding: 18px 0
+		&__pagination
+			display: none
+		&__btn
+			font-size: 14px
+			font-weight: bold
+			
+	.tabs
+		&__head
+			padding: 0
+			margin: 0 0 13px
+			display: block !important
+			line-height: 1.8
+			&:last-child
+				margin: 0 0 13px
+			>li
+				display: block
+				margin: 0 0 2px
+				width: max-content
+		.slick-list
+			padding: 0
+			&:before,&:after
+				display: none				
+						
+	.price-block
+		padding: 36px 0 44px
+		&__title-shadow
+			display: none
+		&__title
+			font-size: 48px
+			margin: 0 0 19px
+		&__text
+			max-width: 100%
+			font-size: 16px
+			line-height: 20/16*1
+		&__subtitle
+			font-size: 14px
+			margin: 0 0 1em
+		&__tabs
+			margin: 20px 0 40px
+		&__table
+			font-size: 14px
+			line-height: 19px
+			max-width: 100%
+		&__pic
+			display: none
+		&__btn
+			display: block
+			width: min-content
+			margin: 0 auto
+
+	.reviews
+		padding: 46px 0 50px
+		&__title-shadow
+			font-size: 467px
+			top: -20px
+			text-indent: -20vw
+		&__title
+			font-size: 48px
+			margin: 0 0 .9em		
+		&__slider
+			font-size: 14px
+			line-height: 24/14*1
+		&__author
+			margin: 3em 0 0
+	
+	.brands
+		padding: 16px 0 19px
+		&__box
+			display: block
+			margin: 0
+		&__item
+			display: block
+			margin: 0
+			&:first-child
+				display: block
+			&:nth-child(n+2)
+				display: none
+				
+	.footer
+		&__topline
+			padding: 39px 0 67px
+		&__contacts
+			display: block
+			text-align: center
+		&__contact
+			width: auto
+			margin: 0 30px 33px
+			&:nth-last-child(n+3)
+				margin: 0 30px 33px
+			&:last-child
+				margin-bottom: 0
+		&__bottomline
+			padding: 24px 0 30px
+		&__text
+			margin: 0 auto 2.6em
+			
+@media(max-width: 420px)
+	.advantages
+		&__item
+			justify-content: flex-start
+	.reviews
+		&__persons
+			width: auto
+			max-width: calc(100% + 26px)
+			margin: 0 -13px 19px
