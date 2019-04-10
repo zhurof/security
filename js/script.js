@@ -233,7 +233,7 @@ function setPagination(){
 	}
 	
 }
-function catalogFilter(category = '*',page = 1){
+function catalogFilter(category='*',page=1){
 	var itemsPerPage = portfolio[screen()]; //Максимальное количество карточек на странице
 	$('.portfolio__item').removeClass('item'+page); //Сносим классы текущей страницы для старых фильтров
 	$('.portfolio__item').filter(category).slice((page-1)*itemsPerPage,page*itemsPerPage).addClass('item'+page);//Добавляем классы текущей страницы для карточек, сооответствующих новому фильтру
