@@ -151,14 +151,20 @@ button,
 	text-overflow: ellipsis
 	border-radius: 5px
 	background-color: #ff5c5b
+	&:active
+		transition: none
 	&_block
 		display: block
 		width: 100%
 		padding: 0
 	&_gray
-		background-color: #394c59
+		background-color: #2f4151
+		&:active
+			background-color: #3b505f
 	&_green
-		background-color: #32a21b
+		background-color: #239a2d
+		&:active
+			background-color: #34aa1b
 /*заголовки*/
 h1,h2,h3,h4,h5,h6
 	margin: 0 0 1em
@@ -338,6 +344,26 @@ ul
 		&:nth-last-child(2)
 			margin-top: 22px
 
+.social-icon
+	display: inline-block
+	width: 29px
+	height: 29px
+	background: 
+		repeat: no-repeat
+		size: contain
+		position: center
+	vertical-align: middle
+	margin: 0 7px 0 0
+	border-radius: 50%
+	&.vk
+		background-image: url(../img/icons/vk.png)
+	&.instagram
+		background-image: url(../img/icons/instagram.png)		
+	&.skype
+		background-image: url(../img/icons/skype.png)		
+	&.whatsapp
+		background-image: url(../img/icons/whatsapp.png)		
+	
 .top-block
 	padding: 120px 0 0
 	position: relative
@@ -394,15 +420,6 @@ ul
 		position: absolute
 		z-index: 2
 		top: calc(100% - 87px)
-		a
-			display: inline-block
-			vertical-align: middle
-			margin: 0 7px 0 0
-			background-color: #fff
-			border-radius: 50%
-			img
-				display: block
-				width: 29px
 
 .services
 	padding: 31px 0 33px
@@ -442,10 +459,17 @@ ul
 	top: calc(100% + 22px)
 	left: calc(50% - 16px)
 	cursor: pointer
-	transition: translateY .3s linear, opacity .2s linear .2s
-	&.anim
-		transform: translateY(-20px)
+	transition: all .5s ease
+	animation: up-down 0.5s ease-in infinite alternate
+	&.hidden
 		opacity: 0
+		top: 90%
+	
+@keyframes up-down
+	from
+		transform: translateY(-4px)
+	to
+		transform: translateY(4px)
 
 .title-shadow
 	font-family: 'Bebas Neue'
@@ -468,10 +492,11 @@ ul
 			left: 0
 
 .about
-	background: url(../img/about-bg.png) no-repeat 50% 0,#eaf4fa
+	background: url(../img/blue-tiles.png) no-repeat 50% 0,#eaf4fa
 	position: relative
 	padding: 167px 0 72px
 	color: #253342
+	overflow: hidden
 	&__title-shadow
 		top: 39px
 		left: 0
@@ -547,8 +572,12 @@ ul
 		position: absolute
 		top: 62px
 		left: 0
-		width: 100%
+		width: 100%		
+	&__title,	&__dots
+		//Чтобы не мешали свайпить слайдер
+		position: relative
 		z-index: 3
+		width: max-content
 	&__title
 		font-size: 155px
 		line-height: 1
@@ -583,7 +612,7 @@ ul
 
 	&__slide
 		padding: 148px 0 79px
-		background: url(../img/bla.png) no-repeat right top, #ffc479
+		background: url(../img/tiles.png) no-repeat right top, #ffc479
 		position: relative
 		&.slick-slide
 			height: auto
@@ -628,7 +657,8 @@ ul
 
 .card
 	width: 305px
-	position: relative	
+	position: relative
+	transform-style: preserve-3d
 	&__pic		
 		min-height: 100%
 		background-color: #000
@@ -637,12 +667,7 @@ ul
 			display: block
 			width: 100%
 			transition: all .2s ease
-			+obj
-	&:hover
-		z-index: 2
-		.card__pic			
-			img
-				opacity: .3		
+			+obj	
 	&__text
 		+pos
 		color: #fff
@@ -655,8 +680,6 @@ ul
 		transition: all .2s ease
 		cursor: default
 		user-select: none
-	&:hover &__text
-		opacity: 1
 	&__title
 		width: 100%
 		margin: 0 0 .4em
@@ -667,8 +690,9 @@ ul
 .portfolio
 	position: relative
 	padding: 133px 0 74px
-	background: url(../img/about-bg.png) no-repeat 50% 0,#eaf4fa
+	background: url(../img/blue-tiles.png) no-repeat 50% 0,#eaf4fa
 	color: #253342
+	overflow: hidden
 	&__title-shadow
 		font-size: 260px
 		color: #eef5fa
@@ -680,6 +704,29 @@ ul
 	.wrapper
 		position: relative
 		z-index: 1
+	&__arrow
+		display: inline-block
+		width: 30px
+		position: absolute
+		z-index: 2
+		top: calc(50% + 57px)
+		background-size: contain
+		background-position: center
+		background-repeat: no-repeat
+		cursor: pointer
+		&:before
+			content: ''
+			display: block
+			padding-top: 54/30*100%
+		&.prev
+			background-image: url(../img/icons/angle-left.png)
+			left: calc(50% - 775px)
+		&.next
+			background-image: url(../img/icons/angle-right.png)
+			right: calc(50% - 775px)
+		&.disabled
+			pointer-events: none
+			visibility: hidden
 	&__title
 		margin: 0 0 .35em
 	&__filter
@@ -708,6 +755,7 @@ ul
 		width: 25%
 	&__nav
 		display: flex
+		justify-content: space-between
 		align-items: flex-end
 		padding: 15px 0
 	&__btn
@@ -718,6 +766,9 @@ ul
 		font-family: Arial, 'Open Sans'
 		cursor: pointer
 		user-select: none
+		&.disabled
+			visibility: hidden
+			pointer-events: none
 	&__pagination
 		font-size: 18px
 		list-style: none
@@ -813,7 +864,7 @@ ul
 			left: 25px
 
 .price-block
-	background: url(../img/darkblue-tiles.png) no-repeat right top, #253342
+	background: url(../img/dark-tiles.png) no-repeat right top, #253342
 	color: #fff
 	padding: 118px 0 77px
 	position: relative
@@ -872,7 +923,7 @@ ul
 
 .reviews
 	position: relative
-	background: url(../img/about-bg.png) no-repeat 50% 0,#eaf4fa
+	background: url(../img/blue-tiles.png) no-repeat 50% 0,#eaf4fa
 	padding: 130px 0 70px
 	overflow: hidden
 	&__title-shadow
@@ -958,18 +1009,30 @@ ul
 	background-color: #e6f0f8
 	&__box
 		display: flex
-		flex-wrap: wrap
+		//flex-wrap: wrap
 		margin: 0 -15px
 	&__item
+		width: 192px
 		display: inline-block
 		margin: 0 15px
 		flex: 1 1 auto
 		text-align: center
 		padding: 20px 0 15px
+		animation: fadeIn .7s ease-in
+		&:nth-child(n+6)
+			display: none
 		img
 			vertical-align: top
 			height: 82px
 			width: auto
+			opacity: .5
+			
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+			
 .contact
 	display: inline-flex
 	align-items: flex-start

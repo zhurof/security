@@ -1,4 +1,11 @@
 ﻿@media(min-width: 1024px)
+	.btn
+		transition: all .2s ease
+		&_gray:hover
+			background-color: #3b505f
+		&_green:hover
+			background-color: #34aa1b
+			
 	.header
 		&__menu
 			a
@@ -10,12 +17,33 @@
 			transition: all .2s ease
 			&:hover
 				background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgxLjMzIiBoZWlnaHQ9IjQyLjY2NyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjgxLjMzIDQyLjY2NyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48cGF0aCBkPSJtMCAwaDI4MS4zM2wtMjMuOTc3IDM3Ljg3MWMtMS41NzY3IDIuNDY5Mi0zLjU2NjIgNC41OTQ0LTcuNjcyNyA0Ljk1NTNoLTIxNy41NWMtMy4xMjI1LTAuMjIwNDktNS42NDI2LTEuODUzNy03LjY3MjctNC42MzU2eiIgZmlsbD0iI2Q1M2QzZCIvPjwvc3ZnPiA=)
-
+	
+	.social-icon
+		transition: all .2s linear
+		&:hover
+			&.vk
+				background-image: url(../img/icons/vk_active.png)
+			&.instagram
+				background-image: url(../img/icons/instagram_active.png)				
+			&.skype
+				background-image: url(../img/icons/skype_active.png)				
+			&.whatsapp
+				background-image: url(../img/icons/whatsapp_active.png)
+	
 	.actions
 		&__dots
 			>li:hover
 				text-decoration: underline
-
+				
+	.card
+		&:hover
+			z-index: 2
+			.card__pic			
+				img
+					opacity: .3		
+			.card__text
+				opacity: 1
+				
 	.portfolio
 		&__filter
 			>li
@@ -48,9 +76,10 @@
 
 	.brands
 		&__item
-			opacity: .5
-			transition: all .2s ease
-			&:hover
+			img
+				opacity: .5
+				transition: all .2s ease
+			&:hover img
 				opacity: 1
 
 @media(max-width: 1819px)
@@ -118,7 +147,6 @@
 			padding-left: 14vw
 		&__media
 			width: 486px
-			opacity: 0
 		&__text
 			width: calc(100% - 486px)
 			padding: 0 0 0 93px
@@ -156,6 +184,11 @@
 				width: 100%
 
 	.portfolio
+		&__arrow
+			&.prev
+				left: calc(50% - 617px)
+			&.next
+				right: calc(50% - 617px)
 		&__filter
 			margin: 0 0 50px
 		&__box
@@ -246,6 +279,8 @@
 
 	.portfolio
 		padding: 133px 0 49px
+		&__arrows
+			display: none
 		&__title-shadow
 			font-size: 240px
 			top: 93px
@@ -259,7 +294,7 @@
 			margin: 0
 		&__item
 			width: calc(100% / 3)
-			&:nth-child(n+10)
+			//&:nth-child(n+10)
 				display: none
 		&__nav
 			padding: 3px 0
@@ -400,7 +435,6 @@
 			margin: 0 0 1px
 		&__media
 			width: auto
-			opacity: 1
 
 	.advantages
 		padding: 22px 0 15px
@@ -424,11 +458,13 @@
 
 	.portfolio
 		padding-bottom: 103px
+		&__title-shadow
+			text-indent: .05em
 		&__filter
 			margin: 0 0 31px
 		&__item
 			width: 50%
-			&:nth-child(n+5)
+			//&:nth-child(n+5)
 				display: none
 		&__nav
 			padding: 20px 0
@@ -481,7 +517,7 @@
 	.brands
 		padding: 16px 0 17px
 		&__item
-			&:first-child
+			&:nth-child(n+5)
 				display: none
 
 	.footer
@@ -603,10 +639,12 @@
 		display: none
 
 	.card-slider
+		margin: 0 auto 133px
 		&__item
-			&:nth-child(n+2)
-				display: none //убрать
-
+			iframe
+				height: 431px
+				max-height: calc(100vw - 26px)
+		
 	.about
 		padding: 77px 0 12px 0
 		&__title-shadow
@@ -687,6 +725,10 @@
 			
 	.portfolio
 		padding: 47px 0 19px
+		&__title-shadow
+			font-size: 260px
+			top: 45px
+			text-indent: -0.11em
 		&__title
 			font-size: 60px
 			margin: 0 0 10px
@@ -697,6 +739,7 @@
 				display: block
 				border: none
 				padding: 0
+				width: max-content
 		&__nav
 			justify-content: space-between
 			padding: 18px 0
@@ -772,9 +815,8 @@
 			margin: 0
 		&__item
 			display: block
+			width: auto
 			margin: 0
-			&:first-child
-				display: block
 			&:nth-child(n+2)
 				display: none
 				
