@@ -508,12 +508,14 @@ ul > li:before {
   font-size: 19px;
   -webkit-transition: none;
   transition: none;
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  opacity: 0;
 }
 .slick-current .top-block__text {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
   -webkit-transition: all 0.5s ease-in-out 0.2s;
   transition: all 0.5s ease-in-out 0.2s;
 }
@@ -652,6 +654,8 @@ ul > li:before {
 
 .about {
   background: url(../img/blue-tiles.png) no-repeat 50% 0, #eaf4fa;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   position: relative;
   padding: 167px 0 72px;
   color: #253342;
@@ -826,6 +830,8 @@ ul > li:before {
 .actions__slide {
   padding: 148px 0 79px;
   background: url(../img/tiles.png) no-repeat right top, #ffc479;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   position: relative;
 }
 .actions__slide.slick-slide {
@@ -952,6 +958,8 @@ ul > li:before {
   background: url(../img/blue-tiles.png) no-repeat 50% 0, #eaf4fa;
   color: #253342;
   overflow: hidden;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 .portfolio__title-shadow {
   font-size: 260px;
@@ -1214,6 +1222,8 @@ ul > li:before {
 
 .price-block {
   background: url(../img/dark-tiles.png) no-repeat right top, #253342;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   color: #fff;
   padding: 118px 0 77px;
   position: relative;
@@ -1299,6 +1309,8 @@ ul > li:before {
 .reviews {
   position: relative;
   background: url(../img/blue-tiles.png) no-repeat 50% 0, #eaf4fa;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
   padding: 130px 0 70px;
   overflow: hidden;
 }

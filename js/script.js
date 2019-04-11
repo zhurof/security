@@ -1,5 +1,5 @@
 ﻿function screen(){
-	var width = $(window).width();
+	var width = window.outerWidth;
 	if(width >= 1820){
 		return 'full';
 	}else if(width>=1280 && width < 1820){
@@ -7,9 +7,9 @@
 	}else if(width >= 1024 && width < 1280){
 		return 'tablet';
 	}else if(width >= 768 && width < 1024){
-		return 'phone'
+		return 'phone';
 	}else{
-		return 'smallphone'
+		return 'smallphone';
 	}
 }
 function changeTemplate(){
@@ -36,6 +36,8 @@ $('.header__menu-close').click(function(){
 	$('.header__menu').fadeOut(400);
 })
 $('.top-block__slider').slick({
+	fade: true,
+	speed: 1000,
 	prevArrow: '<span class="slick-arrow top-block__arrow prev"></span>',
 	nextArrow: '<span class="slick-arrow top-block__arrow next"></span>',
 	responsive: [
@@ -90,7 +92,6 @@ $('.actions__slider').slick({
 	]
 })
 
-
 //отзывы
 $('.reviews__persons').slick({
 	slidesToShow: 3,
@@ -138,10 +139,14 @@ $('.card').each(function(){
 
 //Параллакс
 $('.title-shadow').paroller({ 
-	factor: -0.035,
+	factor: 0.02,
 	type: 'foreground',
 	direction: 'vertical',
-	transition: 'transform 1s ease-out'
+	transition: 'transform 1.5s linear'
+});
+$('.about,.actions__slide,.portfolio,.price-block,.reviews').paroller({ 
+	factor: -0.05,
+	direction: 'vertical',
 });
 
 //Плавная прокрутка ссылкам меню
@@ -299,7 +304,7 @@ $.fn.stackSlider = function(options){
 	function init(){
 		if(responsive){
 			for(key in responsive){
-				if($(window).width()<key){
+				if(window.outerWidth<key){
 					settings = $.extend(settings,responsive[key]);
 					break;
 				}
