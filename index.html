@@ -100,13 +100,13 @@
 							</div>
 						</div>
 					</div>
-					<form action="/" class="form top-block__form">
+					<form action="/send.php" method="post" class="form top-block__form">
 						<h3 class="form__title">ОСТАВЬТЕ ЗАЯВКУ СЕЙЧАС</h3>
 						<div class="form__descr">Мы свяжемся с вами в самое ближайшее время!</div>
 						<div class="form__fields">
-							<input type="text" placeholder="Ваше имя" required>
-							<input type="email" placeholder="Адрес электронной почты" required>
-							<input type="tel" placeholder="Номер телефона" required>
+							<input type="text" name="name" placeholder="Ваше имя" required>
+							<input type="email" name="email" placeholder="Адрес электронной почты">
+							<input type="tel" name="phone" placeholder="Номер телефона" required>
 							<input class="btn btn_block btn_green form__btn" name="form_action" type="submit" value="Заказать звонок" />
 							<input class="btn btn_block btn_gray form__btn" name="form_action" type="submit" value="Отправить заявку" />
 						</div>
@@ -674,6 +674,10 @@
 			</div>
 		</div>
 	</footer>
+	<div class="modal" id="form-message">
+		<span class="modal__close"></span>
+		<div class="modal__content"></div>
+	</div>
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>
 	<script src="libs/perspective/perspective.min.js"></script>
 	<script src="libs/isotope/isotope.pkgd.min.js"></script>

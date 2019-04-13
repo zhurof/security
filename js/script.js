@@ -352,3 +352,84 @@ $('.card-slider').stackSlider({
 		}
 	}
 });
+//Модальные окна
+function openModal(modalId, initiator){  
+  var scrollWidth = window.innerWidth - document.body.clientWidth;//Ширина полосы прокрутки
+  
+	$('.modal-wrapper').children().unwrap();
+	if(!$('#'+modalId).length){
+		alert('Ошибка вызова модального окна');
+		return false;
+	}
+	$('#'+modalId).trigger('beforeShow',initiator).wrap('<div class="modal-wrapper" style="display:none" />');
+	$('.modal-wrapper').fadeIn(400,function(){
+    $('#'+modalId).trigger('afterShow',initiator);
+  });
+	
+	if(scrollWidth){
+		$('html').css('padding-right',scrollWidth);
+		$('body').css('overflow-y','hidden');
+	}
+}
+function closeModal(){
+	$('.modal-wrapper').fadeOut(200, function(){
+		$('html').css('padding-right','');
+		$('body').css('overflow-y','');
+	});
+}
+$(document).on('click', '[data-modal]', function(e){
+	e.preventDefault();
+	var modal = $(this).data('modal');
+	openModal(modal,e.target);
+})
+$(document).on('click', '.modal__close', closeModal);
+
+$(document).on('mousedown', '.modal-wrapper', function(e){
+	if(!$('.modal').is(e.target) && $('.modal').has(e.target).length === 0){
+		closeModal();
+	}
+})
+$(document).keydown(function(e){
+	//Закрытие окна на Esc
+	if(e.which == 27){
+		closeModal();
+	}
+});
+
+//отправка форм ajax-ом
+
+/*В ajax-запрос не подтягиваются значения из input[type=submit], поэтому при рабочем javascript делаем дубль этого поля*/
+$('form').append('<input type="hidden" name="form_action">');
+/*И заполняем его при нажатии на кнопку отправки*/
+$('form :submit').click(function(){
+	$(this.form).find('[type="hidden"][name="form_action"]').val(this.value);
+})
+/*по вышеуказанной причине запрещаем отправку формы клавишей Enter*/
+$('form').keydown(function(e){
+		if(e.keyCode == 13) {
+			e.preventDefault();
+			return false;
+	}
+});
+//Непосредственно отправка
+$('form').submit(function(e){
+	e.preventDefault();
+	var form = this,
+			formData = $(this).serializeArray()
+	
+	$.ajax({
+		url: form.action,
+		type: form.method,
+		data: formData,
+		success: function(data, textStatus, jqXHR){
+			$('#form-message .modal__content').text(data);
+			openModal('form-message',form)
+			form.reset();
+		},
+		error: function(jqXHR,textStatus,errorThrown){
+			$('#form-message .modal__content').text('Ошибка соединения с сервером');
+			openModal('form-message',form);
+			form.reset();
+		}
+	})
+})
